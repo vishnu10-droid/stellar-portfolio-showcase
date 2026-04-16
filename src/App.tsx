@@ -11,16 +11,20 @@ import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ScrollToBottom from "./data/ScrollToBottom";
 
 const queryClient = new QueryClient();
 
 const App = () => (
+
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToBottom />
         <Navbar />
+         
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
