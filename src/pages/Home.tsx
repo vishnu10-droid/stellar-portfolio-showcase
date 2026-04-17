@@ -4,7 +4,7 @@ import { ArrowRight, Code2, Palette, Zap, Terminal, Layout, Globe } from "lucide
 import ScrollReveal from "@/components/ScrollReveal";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
-
+import profile from "../my-pic/profile.png"
 const skills = [
   { icon: Code2, label: "React", color: "text-blue-400" },
   { icon: Terminal, label: "TypeScript", color: "text-blue-600" },
@@ -135,7 +135,7 @@ export default function Home() {
                   className="relative z-10"
                 >
                   <img 
-                    src="src/my-pic/profile.png" 
+                    src={profile} 
                     alt="Profile" 
                     className="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[480px] lg:h-[480px] object-cover rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-[6px] border-card/50 backdrop-blur-md" 
                   />
